@@ -1,29 +1,46 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Ve;
+* {
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
 }
-.empty{
-    height: 150px;
-    width: 150px;
-    margin: 10px;
-    border: solid 3px #000;
-    background: #fff;
+body {
+  background-color: #300c33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
 }
-.fill{
-    background-image: url('https://source.unsplash.com/random/150x150');
-    height: 145px;
-    width: 145px;
+h1 {
+  position: relative;
+  bottom: 166px;
+  left: 468px;
+  color: #fff;
 }
-.hold{
-    border: solid 5px #ccc;
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px #000;
+  background: #fff;
 }
-.hovered{
-    background: #333;
-    border-color: #fff;
-    border-style: dashed;
+.fill {
+  background-image: url("https://source.unsplash.com/random/180x180");
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
 }
-@media(max-width:900px){
-    body{
-        flex-direction: column;
-    }
+.hold {
+  border: solid 5px #ccc;
+}
+.hovered {
+  background: #333;
+  border-color: #fff;
+  border-style: dashed;
+}
+@media (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
 }
